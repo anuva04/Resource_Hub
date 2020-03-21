@@ -4,6 +4,7 @@
 .form-contact .form-group .btn_1 {
   background-image: linear-gradient(to left, #fff 0%, #fff 51%, #fff 100%);
 }
+
 html{
   scroll-behavior: smooth;
 }
@@ -37,7 +38,7 @@ input:hover, input:focus, .form-control:focus {
 
 /* line 21, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_common.scss */
 .section_padding {
-  padding: 140px 0px;
+  padding: 140px 20px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -3830,29 +3831,23 @@ ul {
 /**********************footer part css*******************/
 /* line 2, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
 .footer_part {
-  background-image: url("../img/footer_bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 130px 0px 25px;
+  background-color: #E9E2FF;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 @media (max-width: 991px) {
   /* line 2, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
   .footer_part {
     padding: 70px 0px 25px;
-    background-image: url("none");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #f7f7f7;
+    background-color: #E9E2FF;
   }
 }
 
 /* line 16, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
-.footer_part img {
+/* .footer_part img {
   margin-bottom: 35px;
-}
+} */
 
 @media (max-width: 576px) {
   /* line 20, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_footer.scss */
@@ -5826,16 +5821,27 @@ h1, h2, h3, h4, h5, h6 {
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
 /* line 39, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_contact.scss */
-.contact-title {
-  font-size: 27px;
-  font-weight: 600;
-  margin-bottom: 20px;
+
+#contacthr{
+  width: 70vw;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  background-color: #3B13B0;
 }
 
-/* line 47, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_contact.scss */
-.form-contact label {
-  font-size: 14px;
+.contact-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
 }
+
+
+
+/* line 47, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_contact.scss */
+/* .form-contact label {
+  font-size: 14px;
+} */
 
 /* line 50, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_contact.scss */
 .form-contact .form-group {
@@ -5855,6 +5861,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   display: flex;
   align-items: center;
+  box-shadow: 2px 2px 8px #E5F7FF;
 }
 
 @media (max-width: 991px) {
@@ -5876,12 +5883,14 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 200% auto;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+ 
 }
 
 /* line 77, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_contact.scss */
 .form-contact .form-group .btn_1:hover {
   border: 1px solid #7c32ff;
   color: #7c32ff !important;
+  
 }
 
 /* line 80, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_contact.scss */
@@ -5892,13 +5901,24 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 88, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_contact.scss */
 .form-contact .form-control {
-  border: 1px solid #f0e9ff;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  height: 48px;
+  padding-left: 18px;
+  font-size: 13px;
+  background: transparent;
+  box-shadow: 2px 2px 8px #E5F7FF;
+}
+
+.form-contact .form-control:hover {
+  border: 0.5px solid rgb(240, 99, 34);
   border-radius: 5px;
   height: 48px;
   padding-left: 18px;
   font-size: 13px;
   background: transparent;
 }
+
 
 /* line 96, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_contact.scss */
 .form-contact .form-control:focus {
@@ -5911,6 +5931,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: #999999;
 }
+
+
 
 /* line 107, ../../01 cl html template/03_jun 2019/185 Ecobit SAAS html/sass/_contact.scss */
 .form-contact textarea {
@@ -6112,7 +6134,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #f7f7f7;
+    background-color: #E9E2FF;
   }
 }
 
