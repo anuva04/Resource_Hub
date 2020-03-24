@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <title>PORTFOLIO</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.7/chartist.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.min.css'>
-<link rel="stylesheet" href="css/profile.css">
-
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.7/chartist.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.min.css'>
+  <link rel="stylesheet" href="css/profile.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.signIn').click(function(){
+        $('.fold').toggleClass('active');
+      })
+    })
+  </script>
 </head>
 <body>
 <!-- START MAIN -->
@@ -267,10 +274,10 @@
             <div class="col s12 m6 l4">
               <div id="profile-card" class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="http://demo.geekslabs.com/materialize/v2.1/layout03/images/user-bg.jpg" alt="user background">
+                  <img src="http://demo.geekslabs.com/materialize/v2.1/layout03/images/user-bg.jpg" alt="user background">
                 </div>
                 <div class="card-content">
-                  <img src="http://demo.geekslabs.com/materialize/v2.1/layout03/images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
+                  <img src="http://demo.geekslabs.com/materialize/v2.1/layout03/images/avatar.jpg" alt="" class="circle responsive-img card-profile-image">
                   <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
                     <i class="mdi-action-account-circle"></i>
                   </a>
@@ -281,7 +288,7 @@
                   <p><i class="mdi-communication-email cyan-text text-darken-2"></i> mail@domain.com</p>
 
                 </div>
-                <div class="card-reveal">
+                <!-- <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Roger Waters <i class="mdi-navigation-close right"></i></span>
                   <p>Here is some more information about this card.</p>
                   <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> Project Manager</p>
@@ -289,7 +296,7 @@
                   <p><i class="mdi-communication-email cyan-text text-darken-2"></i> mail@domain.com</p>
                   <p><i class="mdi-social-cake cyan-text text-darken-2"></i> 18th June 1990</p>
                   <p><i class="mdi-device-airplanemode-on cyan-text text-darken-2"></i> BAR - AUS</p>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -490,13 +497,21 @@
 
           <div class="col s12 m6 l4">
             <div id="flight-card" class="card">
-              <div class="card-header amber darken-2">
-                <div class="card-title">
-                  <h4 class="flight-card-title">Flight</h4>
-                  <p class="flight-card-date">June 18, Thu 04:50</p>
+              <div class="card-header">
+                <div class="card-title signIn">
+                  <h4 class="flight-card-title">Add Notes</h4>
+                  <!-- <p class="flight-card-date">June 18, Thu 04:50</p> -->
                 </div>
               </div>
-              <div class="card-content-bg white-text">
+              <div class="fold">
+                <form>
+                  <input type="text" name="" placeholder="Branch">
+                  <input type="text" name="" placeholder="Semester">
+                  <input type="text" name="" placeholder="Subject">
+                  <p style="text-align: center; display: block;"><input type="submit" name="" value="Upload"></p>
+                </form>
+              </div>
+              <!-- <div class="card-content-bg white-text">
                 <div class="card-content">
                   <div class="row flight-state-wrapper">
                     <div class="col s5 m5 l5 center-align">
@@ -532,7 +547,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
 

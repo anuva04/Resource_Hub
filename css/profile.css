@@ -838,6 +838,8 @@ h5.breadcrumbs-header {
 #flight-card .flight-card-title {
   margin: 0;
   font-weight: 300;
+  height: 60px;
+  line-height: 60px;
 }
 
 #flight-card .flight-card-date {
@@ -866,6 +868,69 @@ h5.breadcrumbs-header {
   /* Opera */
   filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
   /* SASS Internet Explorer */
+}
+
+/* Upload Form */
+.card {
+  box-shadow: none;
+  background: #fcfcfc;
+}
+.signIn {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background: #00BCD4;
+  color: #fff;
+  text-align: center;
+  /* line-height: 60px; */
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.fold {
+  position: relative;
+  width: 100%;
+  background: #20728A;
+  transform-origin: top;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: perspective(2000px) rotateX(90deg);
+}
+.fold.active {
+  transform: perspective(2000px) rotateX(0deg);
+}
+.fold form input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  box-shadow: none;
+  outline: none;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+}
+::placeholder {
+  color: #fff;
+}
+.fold form input[type="submit"]{
+  display: block;
+  padding: 12px 40px;
+  border-radius: 40px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #00BCD4;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+
+}
+.fold form input[type="submit"]:hover{
+  background: #247ebf;
 }
 
 #flight-card .card-content-bg {
@@ -955,9 +1020,9 @@ h5.breadcrumbs-header {
 }
 
 #profile-card .card-profile-image {
-  width: 70px;
+  width: 150px;
   position: absolute;
-  top: 110px;
+  top: 20px;
   z-index: 1;
   cursor: pointer;
 }
